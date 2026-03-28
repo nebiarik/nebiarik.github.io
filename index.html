@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sana ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 8vw;
+}
+
+p {
+    font-size: 5vw;
+}
+
+.heart {
+    font-size: 12vw;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 5vw;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #ff4f81;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Seni Çok Seviyorum ❤️</h1>
+    <div class="heart">❤️</div>
+
+    <p>Bu siteyi sadece senin için yaptım...</p>
+
+    <button class="button" onclick="showMessage()">Mesajı Aç 💌</button>
+
+    <p id="message" class="hidden">
+        İyi ki varsın... Hayatımın en güzel parçasısın 💕
+    </p>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
